@@ -109,14 +109,14 @@ nav .space {
 
 header .logo {
   position: absolute;
-  left: 49%;
+  left: 65%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 header .logo img {
-  width: 85%;
+  width: 24%;
 }
 
 header #search-form {
