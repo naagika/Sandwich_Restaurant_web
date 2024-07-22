@@ -20,7 +20,7 @@
   --border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* scrollbar style*/
+/* scrollbar style */
 ::-webkit-scrollbar {
   width: 0.7rem;
 }
@@ -44,15 +44,15 @@ section {
 .custom-btn {
   border: 2px solid var(--border-color);
   background: none;
-  color: #000;
+  color: #fff;
   padding: 0.5rem 1.7rem;
   cursor: pointer;
   display: inline-block;
   text-transform: capitalize;
 }
 .custom-btn:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 /* start header */
@@ -109,15 +109,21 @@ nav .space {
 
 header .logo {
   position: absolute;
-  left: 65%;
+  left: 63%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 header .logo img {
-  width: 24%;
+  width: 28%;
+  transition: transform 0.3s ease-in-out; /* Добавленная строка */
 }
+header .logo img:hover {
+  transform: scale(1.1); /* Измененная строка */
+}
+
 
 header #search-form {
   position: absolute;
@@ -162,7 +168,7 @@ header #search-box {
   width: 100%;
 }
 .home h1 {
-  color: #000;
+  color: #fff;
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -186,7 +192,7 @@ header #search-box {
   padding: 1rem 0;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin: 0;
 }
@@ -196,7 +202,7 @@ header #search-box {
 }
 /* start menu section */
 .menu h2 {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 600;
@@ -218,7 +224,7 @@ header #search-box {
 .menu h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -236,7 +242,7 @@ header #search-box {
 }
 
 .about h2 {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 1rem;
   font-size: 1.6rem;
@@ -257,7 +263,7 @@ header #search-box {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 10rem;
   flex: 1 1 10rem;
-  color: #000;
+  color: #fff;
 }
 
 .about li i {
@@ -268,7 +274,7 @@ header #search-box {
 /* start reviews section */
 
 .reviews h2 {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 1rem;
   font-weight: 600;
@@ -283,7 +289,7 @@ header #search-box {
 .reviews h4 {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -302,7 +308,7 @@ header #search-box {
 /* start contact section */
 
 .contact h2 {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin: 1rem 0 2rem 0;
   font-weight: 600;
@@ -328,14 +334,14 @@ header #search-box {
   padding: 1.3rem;
   border-radius: 50%;
   font-size: 1.7rem;
-  color: #000;
+  color: #fff;
 }
 
 .contact h3 {
   padding: 1rem 0;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin: 0;
 }
@@ -362,7 +368,7 @@ header #search-box {
 /* start blogs section */
 
 .blogs h2 {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   margin: 1rem 0 2rem 0;
   font-weight: 600;
@@ -392,7 +398,7 @@ header #search-box {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #000;
   padding: 1rem 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,13 +409,13 @@ header #search-box {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000;
+  color: #fff;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
 }
 .blogs .layer a {
-  color: #000;
+  color: #fff;
   font-size: 0.9rem;
 }
 .blogs .layer a:hover {
@@ -424,7 +430,7 @@ header #search-box {
   padding: 1rem 0;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   margin: 0;
 }
@@ -440,10 +446,10 @@ footer {
     left top,
     left bottom,
     from(transparent),
-    to(#fff)
+    to(#000)
   );
-  background: -o-linear-gradient(transparent, #fff);
-  background: linear-gradient(transparent, #fff);
+  background: -o-linear-gradient(transparent, #000);
+  background: linear-gradient(transparent, #000);
 }
 footer .links {
   display: -webkit-box;
@@ -484,7 +490,7 @@ footer .copyright i {
     top: 99%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
