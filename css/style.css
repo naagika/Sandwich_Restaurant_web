@@ -33,7 +33,7 @@
 }
 
 body {
-  background-image: url(../images/background.jpg);
+  background-color: #000000;
   background-position: center;
   background-attachment: fixed;
   overflow-x: hidden;
@@ -102,6 +102,49 @@ nav a:hover {
   text-decoration: underline !important;
   text-underline-offset: 0.5rem;
 }
+/* Общие стили для кнопки */
+.order-now-btn {
+  position: fixed;
+  bottom: 40px; /* Расстояние от нижнего края экрана */
+  right: 100px; /* Расстояние от правого края экрана */
+  background-color: #eacf4f; /* Цвет фона */
+  color: #000; /* Цвет текста */
+  border: none;
+  padding: 25px 45px; /* Внутренние отступы */
+  font-size: 20px;
+  border-radius: 5px; /* Закругленные углы */
+  cursor: pointer;
+  z-index: 1000; /* Поверх всех элементов */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Плавный переход */
+}
+
+.order-now-btn:hover {
+  background-color: #1d1919; /* Цвет фона при наведении */
+  color: #ffffff; /* Цвет текста при наведении */
+  border: 2px solid #eacf4f; /* Обводка при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+  transform: scale(1.05); /* Увеличение размера */
+}
+
+/* Анимация при наведении */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(236, 207, 79, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(236, 207, 79, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(236, 207, 79, 0.7);
+  }
+}
+
+.order-now-btn:hover {
+  animation: glow 1s infinite alternate; /* Применение анимации */
+}
+
+
 nav .space {
   display: inline-block;
   width: 10.2rem;
