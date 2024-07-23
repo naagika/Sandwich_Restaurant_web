@@ -125,6 +125,37 @@ header .logo img:hover {
 }
 
 
+@media (max-width: 576px) {
+  header {
+    padding-right: 1rem;
+  }
+  header .logo {
+    width: 60%; /* Установить ширину логотипа 15% */
+    left: 100%;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 80%;
+    left: 40%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  header .logo {
+    width: 80%; /* Установить ширину логотипа 15% */
+    left: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 100%;
+  }
+}
 header #search-form {
   position: absolute;
   top: 99%;
