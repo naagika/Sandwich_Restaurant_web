@@ -152,7 +152,7 @@ nav .space {
 
 header .logo {
   position: absolute;
-  left: 63%;
+  left: 64%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -160,7 +160,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 28%;
+  width: 15%;
   transition: transform 0.3s ease-in-out; /* Добавленная строка */
 }
 header .logo img:hover {
@@ -168,37 +168,8 @@ header .logo img:hover {
 }
 
 
-@media (max-width: 576px) {
-  header {
-    padding-right: 1rem;
-  }
-  header .logo {
-    width: 60%; /* Установить ширину логотипа 15% */
-    left: 100%;
 
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  header .logo img {
-    width: 80%;
-    left: 40%;
-    top: 10%;
-  }
-}
 
-@media (max-width: 450px) {
-  header .logo {
-    width: 80%; /* Установить ширину логотипа 15% */
-    left: 100%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  header .logo img {
-    width: 100%;
-  }
-}
 header #search-form {
   position: absolute;
   top: 99%;
@@ -592,9 +563,6 @@ footer .copyright i {
     transform: rotate(180deg);
   }
 
-  header .logo {
-    left: 15%;
-  }
 
   .home .content {
     max-width: 100%;
@@ -610,15 +578,24 @@ footer .copyright i {
     padding-right: 1rem;
   }
   header .logo {
-    left: 22%;
+    left: 5%;
+    top: 1%;
+    position: fixed;
+     transform: none;
+  }
+  header .logo img {
+    width: 15%;
   }
 }
 
 @media (max-width: 450px) {
   header .logo {
-    left: 25%;
+    left: 0px;
+    position: fixed;
+     transform: none;
   }
   header .logo img {
-    width: 75%;
+    width: 45%;
   }
 }
+
