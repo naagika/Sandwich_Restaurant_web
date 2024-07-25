@@ -57,8 +57,8 @@ section {
 
 /* start header */
 header {
-  color: #000;
-  background: #fff;
+  color: #ffffff;
+  background: #000000;
   position: fixed;
   left: 0;
   right: 0;
@@ -92,7 +92,7 @@ header .icons {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   font-size: 1.3rem;
   text-transform: capitalize;
   margin: 0 1.1rem;
@@ -197,7 +197,7 @@ header #search-form.active {
 header #search-box {
   width: 100%;
   background: none;
-  color: #000;
+  color: #ffffff;
 }
 
 /* start home */
@@ -269,7 +269,7 @@ header #search-box {
 .menu h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -535,8 +535,7 @@ footer .copyright i {
     top: 99%;
     left: 0;
     right: 0;
-    background: #000;
-    display: -webkit-box;
+    background: #ffffff;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
