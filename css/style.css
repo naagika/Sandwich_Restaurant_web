@@ -597,4 +597,18 @@ footer .copyright i {
     width: 45%;
   }
 }
+@media (max-width: 390px) { /* Настройка под iPhone 12 */
+  header {
+    padding-right: 1rem;
+  }
+  header .logo {
+    left: 5%; /* Установите отступ слева */
+    top: 1%; /* Установите отступ сверху */
+    position: fixed; /* Фиксированное позиционирование */
+    transform: none; /* Уберите трансформацию */
+  }
+  header .logo img {
+    width: 15%; /* Установите ширину логотипа */
+  }
+}
 
