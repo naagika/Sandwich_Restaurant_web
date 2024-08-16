@@ -262,6 +262,7 @@ header #search-box {
 }
 .menu .box .stars {
   margin-bottom: 1rem;
+  margin-top:1rem ;
 }
 .menu .box .stars i {
   color: var(--main-color);
@@ -347,6 +348,7 @@ header #search-box {
 }
 
 .reviews .stars i {
+
   color: var(--main-color);
 }
 
