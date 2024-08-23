@@ -613,4 +613,19 @@ footer .copyright i {
     width: 15%; /* Установите ширину логотипа */
   }
 }
+@media (max-width: 430px) { /* Настройка под iPhone 15 */
+  header {
+    padding-right: 1rem;
+  }
+  header .logo {
+    left: 5%; /* Установите отступ слева */
+    top: 1%; /* Установите отступ сверху */
+    position: fixed; /* Фиксированное позиционирование */
+    transform: none; /* Уберите трансформацию */
+  }
+  header .logo img {
+    width: 18%; /* Установите ширину логотипа, немного больше для iPhone 15 */
+  }
+}
+
 
