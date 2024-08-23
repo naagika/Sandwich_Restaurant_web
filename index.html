@@ -21,9 +21,28 @@
 </head>
 <body>
     <!-- start header -->
-    <button class="order-now-btn">Order Now</button>
+    <!-- <button class="order-now-btn">Order Now</button> -->
+    <button onclick="slicefunction()" class="order-now-btn">Order Now</button>
 
-<script src="js/main.js"></script>
+<script>
+  function slicefunction() {
+   (function (w, d, s, o, f, js, fjs) {
+    w[o] = w[o] || function (opt) { w[o].q = w[o].q || opt };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.src = f;
+    js.async = 1;
+    if (fjs) { fjs.parentNode.insertBefore(js, fjs) } else { fjs = d.getElementsByTagName('head')[0]; fjs.appendChild(js) }
+  })(window, document, 'script', 'SliceWidgets', 'https://restaurant-widgets-integrations.slicelife.com/widget.js');
+
+  SliceWidgets({ shopUuid: 'bd91749f-c1d1-4c7c-b558-108e82cd651c' });
+
+  }
+</script>
+
+
+
+
+    <script src="js/main.js"></script>
     <header>
       <div class="container">
         <div class="box">
