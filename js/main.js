@@ -3,12 +3,23 @@ let nav = document.querySelector("header nav");
 let searchBtn = document.querySelector("#search-btn");
 let searchForm = document.querySelector("header #search-form");
 
+
 menuBtn.onclick = function () {
   menuBtn.classList.toggle("fa-times");
   nav.classList.toggle("active");
   searchBtn.classList.remove("fa-times");
   searchForm.classList.remove("active");
 };
+
+let orderbtn = document.querySelector("#order-now-btn");
+if (orderbtn) {
+  orderbtn.addEventListener("click", function() {
+    console.log("nagi");
+  });
+} else {
+  console.log("Button not found.");
+}
+
 
 searchBtn.onclick = function () {
   searchBtn.classList.toggle("fa-times");
