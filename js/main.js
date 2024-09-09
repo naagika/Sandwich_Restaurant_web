@@ -12,8 +12,6 @@ menuBtn.onclick = function () {
 };
 
 
-
-
 searchBtn.onclick = function () {
   searchBtn.classList.toggle("fa-times");
   searchForm.classList.toggle("active");

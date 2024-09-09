@@ -26,25 +26,26 @@
 
 <script>
   function slicefunction() {
-   (function (w, d, s, o, f, js, fjs) {
-    w[o] = w[o] || function (opt) { w[o].q = w[o].q || opt };
-    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-    js.src = f;
-    js.async = 1;
-    js.crossOrigin = 'anonymous';
-    if (fjs) { fjs.parentNode.insertBefore(js, fjs) } else { fjs = d.getElementsByTagName('head')[0]; fjs.appendChild(js) }
-  })(window, document, 'script', 'SliceWidgets', 'https://restaurant-widgets-integrations.slicelife.com/widget.js');
+    // Проверка, добавлен ли виджет уже
+    if (!document.getElementById('slice-widget')) {
+      (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function (opt) { w[o].q = w[o].q || opt };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.src = f;
+        js.id = 'slice-widget'; // Устанавливаем ID для скрипта, чтобы не добавлять его повторно
+        js.async = 1;
+        js.crossOrigin = 'anonymous';
+        if (fjs) { fjs.parentNode.insertBefore(js, fjs) } else { fjs = d.getElementsByTagName('head')[0]; fjs.appendChild(js) }
+      })(window, document, 'script', 'SliceWidgets', 'https://restaurant-widgets-integrations.slicelife.com/widget.js');
 
-  SliceWidgets({ shopUuid: 'bd91749f-c1d1-4c7c-b558-108e82cd651c' });
+      SliceWidgets({ shopUuid: 'bd91749f-c1d1-4c7c-b558-108e82cd651c' });
+    }
   }
 
 </script>
-
-
-
-
-
     <script src="js/main.js"></script>
+
+
     <header>
       <div class="container">
         <div class="box">
